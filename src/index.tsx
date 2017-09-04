@@ -1,5 +1,5 @@
 import * as React from 'react';
-const canUseDOM: boolean = !!(
+const canUseDOM: boolean = !(
   (typeof window !== 'undefined' &&
   window.document && window.document.createElement)
 );
@@ -14,7 +14,6 @@ export const IntercomAPI = (...args: any[]) => {
 
 interface IntercomProps {
   appID: string;
-  app_id: string;
 }
 
 interface iProps {
