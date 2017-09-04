@@ -22,7 +22,7 @@ interface iProps {
   c: (args: any) => any;
 }
 
-export default class Intercom extends React.Component<IntercomProps, {}> {
+export class Intercom extends React.Component<IntercomProps, {}> {
 
   static displayName: string = 'Intercom';
 
